@@ -5,8 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AlarmGest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="AlarmGest" Height="950" Width="1800" WindowStartupLocation="CenterScreen" Icon="logo.png">
     <Grid>
-        
+        <Grid Name="GridMenu" Width="225" HorizontalAlignment="Left" Background="DimGray" >
+            <StackPanel  >
+                <ListView Name="menuListView"  Background="Transparent">
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal" PreviewMouseLeftButtonDown="MenuHomeSelecionado">
+                            <materialDesign:PackIcon Kind="ViewDashboard" Width="40" Height="40" Foreground="White"/>
+                            <TextBlock Text=" Home" FontSize="25" Foreground="White" />
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal" PreviewMouseLeftButtonDown="MenuClientesSelecionado">
+                            <materialDesign:PackIcon Kind="Account" Width="40" Height="40" Foreground="White"/>
+                            <TextBlock Text=" Clientes" FontSize="25" Foreground="White"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal" PreviewMouseLeftButtonDown="MenuObrasSelecionado">
+                            <materialDesign:PackIcon Kind="Worker" Width="40" Height="40" Foreground="White"/>
+                            <TextBlock Text=" Obras" FontSize="25" Foreground="White"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal" PreviewMouseLeftButtonDown="MenuAdminsitracaoSelecionado">
+                            <materialDesign:PackIcon Kind="Business" Width="40" Height="40" Foreground="White"/>
+                            <TextBlock Text=" Administração" FontSize="25" Foreground="White"/>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+            </StackPanel>
+        </Grid>
+        <Grid Margin="225,0,0,0">
+            <Frame  Name="Main" Background="LightGray" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
+                NavigationUIVisibility="Hidden"/>
+        </Grid>
     </Grid>
 </Window>

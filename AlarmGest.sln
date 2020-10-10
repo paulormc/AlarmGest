@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmGest.Janelas", "AlarmG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmGest.Database", "..\AlarmGest_Database\AlarmGest.Database.csproj", "{025828C3-9328-43ED-862C-145170D22644}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmGest.Global", "..\AlarmGest.Global\AlarmGest.Global.csproj", "{95EC9CE6-28A8-4A19-A940-0FC73DE6C2DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{025828C3-9328-43ED-862C-145170D22644}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{025828C3-9328-43ED-862C-145170D22644}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{025828C3-9328-43ED-862C-145170D22644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95EC9CE6-28A8-4A19-A940-0FC73DE6C2DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95EC9CE6-28A8-4A19-A940-0FC73DE6C2DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95EC9CE6-28A8-4A19-A940-0FC73DE6C2DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95EC9CE6-28A8-4A19-A940-0FC73DE6C2DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

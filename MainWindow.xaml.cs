@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AlarmGest.Janelas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,5 +25,27 @@ namespace AlarmGest
         {
             InitializeComponent();
         }
+
+
+        private void MenuHomeSelecionado(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+        private void MenuClientesSelecionado(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+        private void MenuObrasSelecionado(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+        private void MenuAdminsitracaoSelecionado(object sender, MouseButtonEventArgs e)
+        {
+            Main.Content = new JanAdministracao();
+        }
+
+
+
+
     }
 }
